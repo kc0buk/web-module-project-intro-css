@@ -50,7 +50,7 @@ table {
 * {
     box-sizing: border-box;
     max-width: 100%;
-    border: 1px solid gray;
+    border: 1px solid gray; /*  LAYOUT ASSISTANCE BORDER */
 }
 
 html {
@@ -65,31 +65,33 @@ body {
 /* Page Container */
 
 .container {
-    width: 90%;
+    width: 100%;
     margin: 2% auto;
 }
 
 /* Navigation Styling */
 
 .navContainer {
-    width: 80%;
-    margin: 1% auto;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
+    
 }
 
 nav a.navBtn {
     text-decoration: none;
     padding: 1%;
-    margin: 0 1%;
+    margin: 0 10%;
     border-radius: 10px;
     color: white;
     display: inline-block;
     text-align: center;
-    width: 20%;
+    width: 13%;
     font-size: 1.2rem;
     line-height: 1.5rem;
     padding: 1% 3%;
-    margin: 0 6%;
+    margin: 1% auto;
+    vertical-align: middle;
 }
 
 .navPlan {
@@ -106,19 +108,69 @@ nav a.navBtn {
 
 /* Header Styling */
 
+.headerContainer {
+    width: 100%;
+    padding: 1% 7%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
 header img {
     border-radius: 50%;
-    width: 20vh;
+    width: 25%;
     margin: 5%;
     display: inline-block;
 }
 
 h1 {
     font-family: 'Chelsea Market';
-    font-size: 3rem;
+    font-size: 6rem;
     display: inline-block;
+    margin: 3% 3%;
+}
+
+.pageHeadline {
+    display: inline-block;
+    text-align: center;
+    height: 20%;
+    width: 60%;
+    vertical-align: top;
+    margin-top: 7%;
+}
+
+.headerTagline {
+    line-height: 2rem;
+    /* margin: 3% 2%; */
+}
+
+.subTagLine {
+    width: 60%;
+    margin: 2% auto;
 }
 
 /* Main Styling */
 
+.mainBodyText {
+    color: white;
+    background-color: #DDB9A3;
+    padding: 2rem 2%;
+    text-align: center;
+    line-height: 2rem;
+    margin: 0 5%;
+}
+
+.mainBodyText p {
+    margin: 1.5%;
+}
 /* Footer Styling */
+
+footer {
+    width: 100%;
+    padding: 3% 5%;
+    display: inline-block;
+}
+
+.footerBackground {
+    background-color: #F9E7DC;
+    margin: 0;
+}
