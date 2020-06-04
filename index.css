@@ -60,7 +60,8 @@ html {
 body {
     font-family: 'Roboto Mono';
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
 }
 
 /* Page Container */
@@ -113,6 +114,47 @@ nav a.navBtn {
     width: 10%;
 }
 
+/* Top Navigation Animation */
+
+@keyframes navAnimationPlan {
+    from {background-color: #FF764E;}
+    to {background-color: white;}
+  }
+
+nav a.aniPlan:hover {
+    color: #FF764E;
+    background-color: white;
+    border: 2px solid #FF764E;
+    border-radius: 10px;
+    animation: navAnimationPlan 500ms linear 0s 1 alternate;
+}
+
+@keyframes navAnimationLearn {
+    from {background-color: #5ED3EB;}
+    to {background-color: white;}
+  }
+
+nav a.aniLearn:hover {
+    color: #5ED3EB;
+    background-color: white;
+    border: 2px solid #5ED3EB;
+    border-radius: 10px;
+    animation: navAnimationLearn 500ms linear 0s 1 alternate;
+}
+
+@keyframes navAnimationVolunteer {
+    from {background-color: #FFCD69;}
+    to {background-color: white;}
+  }
+
+nav a.aniVol:hover {
+    color: #FFCD69;
+    background-color: white;
+    border: 2px solid #FFCD69;
+    border-radius: 10px;
+    animation: navAnimationVolunteer 500ms linear 0s 1 alternate;
+}
+
 /* Header Styling */
 
 .headerContainer {
@@ -133,7 +175,7 @@ h1 {
     font-family: 'Chelsea Market';
     font-size: 6rem;
     display: inline-block;
-    margin: 3% 3%;
+    margin: 5% 3% 7% 3%;
 }
 
 .pageHeadline {
@@ -145,9 +187,9 @@ h1 {
     margin-top: 7%;
 }
 
-.headerTagline {
-    line-height: 2rem;
-    /* margin: 3% 2%; */
+.headerTagline p {
+    /* line-height: 2rem; */
+    margin-bottom: 5%;
 }
 
 .subTagLine {
@@ -162,12 +204,12 @@ h1 {
     background-color: #DDB9A3;
     padding: 2rem 2%;
     text-align: center;
-    line-height: 2rem;
+    /* line-height: 2rem; */
     margin: 0 5%;
 }
 
 .mainBodyText p {
-    margin: 1.5%;
+    margin: 2%;
 }
 
 .parkInstructions {
@@ -175,16 +217,17 @@ h1 {
     width: 100%;
     margin: 1% auto;
     text-align: center;
-    line-height: 2rem;
+    /* line-height: 2rem; */
 }
 
 .parkInstructions img {
     display: inline-block;
     width: 12%;
+    margin-top: 3%;
 }
 
 .parkInstructions p {
-    width: 18%;
+    width: 25%;
     margin: 1% auto;
 }
 
@@ -197,15 +240,18 @@ h1 {
 .footerContainer img {
     display: inline-block;
     width: 100%;
-    height: 20vh;
+    height: 30rem;
     margin 0;
     background-position: center;
+    object-fit: cover;
+    object-position: center 15%;
+    margin-top: 3%;
 }
 
 .footerBackground {
     display: inline-block;
     width: 100%;
     background-color: #F9E7DC;
-    padding: 3% 5%;
-    margin: 0 auto;
+    padding: 3% 0;
+    margin: 0;
 }
