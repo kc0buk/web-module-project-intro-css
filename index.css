@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	/* font-size: 100%; */
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+    /* border: 1px solid gray;  LAYOUT ASSISTANCE BORDER */
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto Mono';
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+
+/* Page Container */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+/* Navigation Styling */
+
+.navContainer {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+
+nav a.navBtn {
+    text-decoration: none;
+    padding: 1%;
+    margin: 0 10%;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    width: 13%;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    padding: 1% 3%;
+    margin: 1% auto;
+    vertical-align: middle;
+}
+
+.navPlan {
+    background-color: #FF764E;
+}
+
+.navLearn {
+    background-color: #5ED3EB;
+}
+
+.navVolunteer {
+    background-color: #FFCD69;
+}
+
+.navSpace {
+    display: inline-block;
+    width: 10%;
+}
+
+/* Top Navigation Animation */
+
+@keyframes navAnimationPlan {
+    from {background-color: #FF764E;}
+    to {background-color: white;}
+  }
+
+nav a.aniPlan:hover {
+    color: #FF764E;
+    background-color: white;
+    border: 2px solid #FF764E;
+    border-radius: 10px;
+    animation: navAnimationPlan 500ms linear 0s 1 alternate;
+}
+
+@keyframes navAnimationLearn {
+    from {background-color: #5ED3EB;}
+    to {background-color: white;}
+  }
+
+nav a.aniLearn:hover {
+    color: #5ED3EB;
+    background-color: white;
+    border: 2px solid #5ED3EB;
+    border-radius: 10px;
+    animation: navAnimationLearn 500ms linear 0s 1 alternate;
+}
+
+@keyframes navAnimationVolunteer {
+    from {background-color: #FFCD69;}
+    to {background-color: white;}
+  }
+
+nav a.aniVol:hover {
+    color: #FFCD69;
+    background-color: white;
+    border: 2px solid #FFCD69;
+    border-radius: 10px;
+    animation: navAnimationVolunteer 500ms linear 0s 1 alternate;
+}
+
+/* Header Styling */
+
+.headerContainer {
+    width: 100%;
+    padding: 1% 7%;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+header img {
+    border-radius: 50%;
+    width: 25%;
+    margin: 5%;
+    display: inline-block;
+}
+
+h1 {
+    font-family: 'Chelsea Market';
+    font-size: 6rem;
+    display: inline-block;
+    margin: 5% 3% 7% 3%;
+}
+
+.pageHeadline {
+    display: inline-block;
+    text-align: center;
+    height: 20%;
+    width: 60%;
+    vertical-align: top;
+    margin-top: 7%;
+}
+
+.headerTagline p {
+    /* line-height: 2rem; */
+    margin-bottom: 5%;
+}
+
+.subTagLine {
+    width: 60%;
+    margin: 2% auto;
+}
+
+/* Main Styling */
+
+.mainBodyText {
+    color: white;
+    background-color: #DDB9A3;
+    padding: 2rem 2%;
+    text-align: center;
+    /* line-height: 2rem; */
+    margin: 0 5%;
+}
+
+.mainBodyText p {
+    margin: 2%;
+}
+
+.parkInstructions {
+    display: inline-block;
+    width: 100%;
+    margin: 1% auto;
+    text-align: center;
+    /* line-height: 2rem; */
+}
+
+.parkInstructions img {
+    display: inline-block;
+    width: 12%;
+    margin-top: 3%;
+}
+
+.parkInstructions p {
+    width: 25%;
+    margin: 1% auto;
+}
+
+.parkInstructions strong {
+    font-weight: 700;
+}
+
+/* Footer Styling */
+
+.footerContainer img {
+    display: inline-block;
+    width: 100%;
+    height: 30rem;
+    margin 0;
+    background-position: center;
+    object-fit: cover;
+    object-position: center 15%;
+    margin-top: 3%;
+}
+
+.footerBackground {
+    display: inline-block;
+    width: 100%;
+    background-color: #F9E7DC;
+    padding: 3% 0;
+    margin: 0;
+}
